@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <title>Hand-Made Webpage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人首頁</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Banner -->
-        <div id="banner">
-            <h1>Here is Banner</h1>
-        </div>
-        <div id="banner-placeholder"></div>
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+  </nav>
 
-        <!-- Main container -->
-        <div class="container">
-            <!-- Navigator -->
-            <div id="nav">
-                <ul>
-                    <li><a href="#scene01">Scene01</a></li>
-                    <li><a href="#scene02">Scene02</a></li>
-                    <li><a href="#scene03">Scene03</a></li>
-                    <li><a href="#scene04">Scene04</a></li>
-                </ul>
-            </div>
-            <div id="nav-placeholder">&nbsp;</div>
+  <!-- 首頁 Banner -->
+  <section class="banner">
+    <h1>這裡是 Banner</h1>
+  </section>
 
-            <!-- Content sections -->
-            <div id="content">
-                <section id="scene01"><h1>Scene01</h1></section>
-                <section id="scene02"><h1>Scene02</h1></section>
-                <section id="scene03"><h1>Scene03</h1></section>
-                <section id="scene04"><h1>Scene04</h1></section>
-            </div>
-
-            <!-- Supporting info -->
-            <div id="supporting">Information</div>
-        </div>
-
-        <!-- Footer -->
-        <div id="footer">Here is footer</div>
+  <!-- Section 1 -->
+  <section id="section1" class="section-wrapper">
+    <div class="section-banner" style="background-image: url('https://source.unsplash.com/random/1920x1080/?cf0058,1');">
+      <h2>區段1 Banner</h2>
     </div>
+    <div class="section-content">
+      <p>
+        這是第一個區塊內容，主要用來展示排版效果。
+        區塊內容區域有固定寬度、白色背景、圓角邊框，並置中顯示在灰色背景之中。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section id="section2" class="section-wrapper">
+    <div class="section-banner" style="background-image: url('https://source.unsplash.com/random/1920x1080/?cf0058,2');">
+      <h2>區段2 Banner</h2>
+    </div>
+    <div class="section-content">
+      <p>
+        這是第二個區塊內容，內容區塊樣式與第一個區塊一致，
+        白底置中，灰色背景，圓角和內邊距保持一致，方便閱讀。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section id="section3" class="section-wrapper">
+    <div class="section-banner" style="background-image: url('https://source.unsplash.com/random/1920x1080/?cf0058,3');">
+      <h2>區段3 Banner</h2>
+    </div>
+    <div class="section-content">
+      <p>
+        這是第三個區塊內容，延續前兩個區塊的設計風格，
+        灰色背景、白底置中內容區塊，排版簡潔易讀。
+      </p>
+    </div>
+  </section>
 </body>
 </html>
