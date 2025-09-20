@@ -1,90 +1,151 @@
-body {
-    margin: 0;
-    padding: 0;
+/* 主色定義 */
+:root {
+  --main-color: #CF0058;       /* 主色 */
+  --main-color-dark: #a30045;  /* 深紅 */
+  --main-color-light: #ff5a85; /* 淺粉紅 */
+  --bg-gray: #f2d6df;          /* 灰底偏粉色 */
+  --text-white: #ffffff;
 }
 
-#wrapper {
-    width: 800px;
-    margin: 0 auto;
+/* 清除預設樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#banner {
-    width: 800px;
-    height: 100px;
-    background-color: beige;
-    opacity:0.7;
-    clear:both;
-    position:fixed;
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* 平滑滾動 */
 }
 
-#banner-placeholder{
-    height: 100px;
+/* 導覽列 */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(207,0,88,0.85); /* 主色半透明 */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  z-index: 1000;
+  flex-wrap: wrap;
 }
 
-#nav {
-    width: 100px;
-    /* height: 200px; */
-    /* background-color:lightgray; */
-    /* float:left; */
-    position:fixed;
+.navbar a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s;
 }
 
-ul{
-    padding-left: 0;
-}
-li{
-    display:block;
-    text-align: center;
-    margin-bottom: 5px;
-    background-color:lightgray;
+.navbar a:hover {
+  color: var(--main-color-light);
+  text-decoration: underline;
 }
 
-li:hover{
-    background-color:pink;
-}
-ul a{
-    text-decoration: none;
-}
-
-#nav-placeholder{
-    width:100px;
-    float:left;
-}
-#content {
-    width: 600px;
-    float:left;
-}
-#supporting {
-    width: 100px;
-    height: 150px;
-    background-color:pink;
-    float:left;
-}
-#footer {
-    width: 800px;
-    height: 50px;
-    background-color:gray;
-    clear:both;
+/* 首頁 Banner */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/random/1920x1080/?cf0058");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  overflow: hidden; /* Clear floats */
+.banner h1 {
+  color: var(--text-white);
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px var(--main-color-dark);
 }
 
-section{
-    height:100vh;
-/*     scroll-margin-top: 100px;  */
-    padding-top: 100px;
-    margin-top: -100px;    
-    position:relative;
+/* Section Banner */
+.section-wrapper {
+  background: var(--bg-gray);
 }
 
-.text-container{
-    padding: 5px;
-    text-align:justify;
+.section-banner {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section{
-    padding-top:150px;
-    margin-top:-150px;
-    scroll-margin-top:150px;
+
+.section-banner h2 {
+  color: var(--text-white);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px var(--main-color-dark);
+}
+
+/* Section 內容區塊 */
+.section-content {
+  max-width: 800px;
+  margin: -60px auto 80px auto;
+  background: var(--text-white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 其他內容區塊 */
+.content {
+  padding: 100px 20px;
+  min-height: 100vh;
+  background: var(--bg-gray);
+}
+
+.content h2 {
+  scroll-margin-top: 70px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .section-banner {
+    height: 300px;
+  }
+  .section-banner h2 {
+    font-size: 2rem;
+  }
+  .section-content {
+    max-width: 90%;
+    padding: 20px;
+    margin: -40px auto 60px auto;
+  }
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 50vh;
+  }
+  .section-banner {
+    height: 250px;
+  }
+  .banner h1, .section-banner h2 {
+    font-size: 1.5rem;
+  }
+  .section-content {
+    padding: 15px;
+  }
+  .navbar a {
+    font-size: 0.8rem;
+  }
 }
