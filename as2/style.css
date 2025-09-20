@@ -3,9 +3,9 @@
     --primary-color: #cf0058;       /* 主色 */
     --primary-hover: #ff3366;       /* hover 或強調色 */
     --secondary-color: #ffe6ef;     /* 淡粉色背景 */
-    --content-bg: #ffffff;           /* 內容區塊白色 */
-    --text-color: #ffffff;           /* 白色文字 */
-    --section-bg: #ffe6ef;           /* Section 灰色改為淡粉 */
+    --content-bg: #ffffff;          /* 內容區塊白色 */
+    --text-color: #ffffff;          /* 白色文字 */
+    --section-bg: #ffe6ef;          /* Section 背景 */
 }
 
 /* 基本樣式 */
@@ -21,7 +21,7 @@ html, body {
 .banner {
     height: 100vh;
     width: 100%;
-    background-image: url('https://source.unsplash.com/random/1920x1080?pink'); /* 偏粉色圖片 */
+    background-image: url('https://source.unsplash.com/random/1920x1080?pink');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -42,7 +42,7 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(207,0,88,0.85); /* 主色半透明 */
+    background: rgba(207,0,88,0.85);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -67,6 +67,7 @@ html, body {
 .section {
     padding: 100px 20px 50px 20px;
     background-color: var(--section-bg);
+    scroll-margin-top: 70px; /* 預留導覽列高度，確保標題完整 */
 }
 
 /* Section Banner */
@@ -94,7 +95,7 @@ html, body {
     margin: -50px auto 0 auto;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(207,0,88,0.3); /* 主色陰影 */
+    box-shadow: 0 2px 8px rgba(207,0,88,0.3);
     position: relative;
     z-index: 1;
 }
