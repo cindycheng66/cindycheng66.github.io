@@ -1,0 +1,47 @@
+#section1 div:first-child {
+  background-image: url("https://cindycheng66.github.io/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#section2 div:first-child {
+  background-image: url("https://cindycheng66.github.io/2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#section3 div:first-child {
+  background-image: url("https://cindycheng66.github.io/3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#section4 div:first-child {
+  background-image: url("https://cindycheng66.github.io/4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+section .col-6 {
+  padding: 40px;
+}
+
+
+section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
