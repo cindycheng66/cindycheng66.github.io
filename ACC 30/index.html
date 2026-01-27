@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC 30 周年特刊</title>
+    <style>
+        /* 基礎樣式設定 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Noto Serif TC", serif; /* 建議使用襯線體增加質感 */
+            scroll-behavior: smooth;
+        }
+
+        /* 導覽列 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* 區塊通用樣式 */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        h1 { font-size: 3.5rem; margin-bottom: 20px; letter-spacing: 5px; }
+        h2 { font-size: 2.5rem; margin-bottom: 30px; }
+        p { line-height: 1.8; max-width: 800px; font-size: 1.1rem; }
+
+        /* 各區塊顏色與風格 */
+        
+        /* 首頁區塊 */
+        .hero {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            border-bottom: 5px solid #d4af37; /* 金色點綴 */
+        }
+
+        /* 長官行程區塊 - 優雅灰 */
+        .official-visit {
+            background-color: #f4f4f4;
+            color: #2c3e50;
+        }
+
+        /* 拍賣GALA區塊 - 奢華金/米色 */
+        .gala-auction {
+            background-color: #eaddca;
+            color: #5d4037;
+        }
+
+        /* 璞玉煉金區塊 - 深邃黑（劇場感） */
+        .performance {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* 按鈕樣式 */
+        .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            border: 1px solid currentColor;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #d4af37;
+            color: white;
+            border-color: #d4af37;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">ACC 30</a>
+        <a href="#visit">長官來台紀實</a>
+        <a href="#gala">30周年拍賣GALA</a>
+        <a href="#performance">璞玉煉金</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>ACC 30</h1>
+        <p>亞洲文化基金會三十周年慶典——跨越時代的藝術橋樑。</p>
+        <p>點擊下方探索三十周年的精彩篇章</p>
+    </section>
+
+    <section id="visit" class="official-visit">
+        <h2>文化交織的時刻：長官來台紀實</h2>
+        <p>紀錄 ACC 總部長官蒞臨台灣，走訪在地工作室與藝術機構，深化亞洲文化交流的溫暖印記。</p>
+        <a href="#" class="btn">閱讀新聞稿內容</a>
+    </section>
+
+    <section id="gala" class="gala-auction">
+        <h2>傳承與公益：30周年慈善拍賣 GALA</h2>
+        <p>集結各界藝術愛好者，透過珍稀藝術品的競逐，為下一代的藝術家籌措交流基金，延續藝術生命力。</p>
+        <a href="#" class="btn">瀏覽拍賣亮點</a>
+    </section>
+
+    <section id="performance" class="performance">
+        <h2>重頭戲：璞玉煉金 Performance</h2>
+        <p>三十年一劍。這是一場結合當代視覺與感官的表演藝術，象徵藝術家如璞玉般經過淬煉，終成金石之光。</p>
+        <a href="#" class="btn">進入沉浸式體驗</a>
+    </section>
+
+</body>
+</html>
