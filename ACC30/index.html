@@ -40,7 +40,7 @@
         /* ===== 區塊共用設定 ===== */
         section {
             min-height: 100vh;
-            padding-top: 120px;          /* 🔴 關鍵：避開 fixed nav */
+            padding-top: 120px;
             padding-left: 10%;
             padding-right: 10%;
             display: flex;
@@ -48,6 +48,22 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ===== 背景遮罩 ===== */
+        section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 0;
+        }
+
+        section > * {
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
@@ -67,26 +83,25 @@
             font-size: 1.1rem;
         }
 
-        /* ===== 色彩配置 ===== */
+        /* ===== 各區塊背景圖片（✔ 修正路徑） ===== */
         .hero {
-            background-color: #ffffff;
-            color: #C41E3A;
-            border-bottom: 5px solid #C41E3A;
+            background: url("./hero.jpg") center / cover no-repeat;
+            color: #ffffff;
         }
 
         .official-visit {
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        .gala-auction {
-            background-color: #C41E3A;
+            background: url("./visit.jpg") center / cover no-repeat;
             color: #ffffff;
         }
 
         .performance {
-            background-color: #ffffff;
-            color: #1a1a1a;
+            background: url("./performance.jpg") center / cover no-repeat;
+            color: #ffffff;
+        }
+
+        .gala-auction {
+            background: url("./gala.jpg") center / cover no-repeat;
+            color: #ffffff;
         }
 
         /* ===== 按鈕 ===== */
@@ -108,18 +123,12 @@
             color: #ffffff;
             border-color: #C41E3A;
         }
-
-        .gala-auction .btn:hover {
-            background-color: #ffffff;
-            color: #C41E3A;
-            border-color: #ffffff;
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- ===== 導覽列（只在本頁滑動） ===== -->
+    <!-- ===== 導覽列 ===== -->
     <nav>
         <a href="#home">首頁</a>
         <a href="#visit">同行此刻</a>
@@ -129,29 +138,30 @@
 
     <!-- ===== 首頁 ===== -->
     <section id="home" class="hero">
-        <h1> ACC台灣 30</h1>
-        <p>ACC 台灣 30 周年，我們誠摯邀請您透過受獎人表演與周年晚宴，回顧三十年來支持三百餘位藝術家走向世界的跨文化旅程。</p>
+        <h1>ACC台灣30</h1>
+        <p>ACC台灣30周年，我們誠摯邀請您透過受獎人表演與周年晚宴，回顧三十年來支持三百餘位藝術家走向世界的跨文化旅程。</p>
     </section>
 
-    <!-- ===== 長官來台 ===== -->
+    <!-- ===== 參訪 ===== -->
     <section id="visit" class="official-visit">
-        <h2>ACC台灣 30，我們和 ACC 夥伴的探索台灣之旅</h2>
+        <h2>ACC台灣30，我們和 ACC 夥伴的探索台灣之旅</h2>
         <p>ACC 董事來台期間走訪工作室與藝術空間的故事。</p>
         <a href="visit.html" class="btn">閱讀更多</a>
     </section>
 
     <!-- ===== Performance ===== -->
     <section id="performance" class="performance">
-        <h2>《璞玉煉金的故事－ACC台灣 30》</h2>
+        <h2>《璞玉煉金的故事－ACC台灣30》</h2>
         <p>ACC 讀你、懂你、敬你。你是天賜的璞玉，你是待鍊的金身。</p>
         <a href="performance.html" class="btn">走進《璞玉煉金》現場</a>
     </section>
 
-<!-- ===== GALA ===== -->
+    <!-- ===== GALA ===== -->
     <section id="gala" class="gala-auction">
         <h2>ACC 30 周年晚宴</h2>
         <p>來自台灣與世界各地的 ACC 董事、受獎人與長久支持的夥伴，在三十周年齊聚一堂。</p>
         <a href="gala.html" class="btn">進入 30 周年晚宴</a>
     </section>
+
 </body>
 </html>
