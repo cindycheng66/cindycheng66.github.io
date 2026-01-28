@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC 30 周年特刊</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Noto Serif TC", serif;
+            scroll-behavior: smooth;
+        }
+
+        /* ===== 導覽列 ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #C41E3A;
+        }
+
+        /* ===== 區塊共用設定 ===== */
+        section {
+            min-height: 100vh;
+            padding-top: 120px;          /* 🔴 關鍵：避開 fixed nav */
+            padding-left: 10%;
+            padding-right: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.8;
+            max-width: 800px;
+            font-size: 1.1rem;
+        }
+
+        /* ===== 色彩配置 ===== */
+        .hero {
+            background-color: #ffffff;
+            color: #C41E3A;
+            border-bottom: 5px solid #C41E3A;
+        }
+
+        .official-visit {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .gala-auction {
+            background-color: #C41E3A;
+            color: #ffffff;
+        }
+
+        .performance {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* ===== 按鈕 ===== */
+        .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            border: 1.5px solid currentColor;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #C41E3A;
+            color: #ffffff;
+            border-color: #C41E3A;
+        }
+
+        .gala-auction .btn:hover {
+            background-color: #ffffff;
+            color: #C41E3A;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== 導覽列（只在本頁滑動） ===== -->
+    <nav>
+        <a href="#home">首頁</a>
+        <a href="#visit">同行此刻</a>
+        <a href="#performance">《璞玉煉金的故事－ACC台灣30》</a>
+        <a href="#gala">ACC 30周年晚宴</a>
+    </nav>
+
+    <!-- ===== 首頁 ===== -->
+    <section id="home" class="hero">
+        <h1> ACC台灣 30</h1>
+        <p>ACC 台灣 30 周年，我們誠摯邀請您透過受獎人表演與周年晚宴，回顧三十年來支持三百餘位藝術家走向世界的跨文化旅程。</p>
+    </section>
+
+    <!-- ===== 長官來台 ===== -->
+    <section id="visit" class="official-visit">
+        <h2>ACC台灣 30，我們和 ACC 夥伴的探索台灣之旅</h2>
+        <p>ACC 董事來台期間走訪工作室與藝術空間的故事。</p>
+        <a href="visit.html" class="btn">閱讀更多</a>
+    </section>
+
+    <!-- ===== Performance ===== -->
+    <section id="performance" class="performance">
+        <h2>《璞玉煉金的故事－ACC台灣 30》</h2>
+        <p>ACC 讀你、懂你、敬你。你是天賜的璞玉，你是待鍊的金身。</p>
+        <a href="performance.html" class="btn">走進《璞玉煉金》現場</a>
+    </section>
+
+<!-- ===== GALA ===== -->
+    <section id="gala" class="gala-auction">
+        <h2>ACC 30 周年晚宴</h2>
+        <p>來自台灣與世界各地的 ACC 董事、受獎人與長久支持的夥伴，在三十周年齊聚一堂。</p>
+        <a href="gala.html" class="btn">進入 30 周年晚宴</a>
+    </section>
+</body>
+</html>
