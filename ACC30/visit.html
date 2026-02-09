@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <title>ACC 30，我們和 ACC 夥伴的探索台灣之旅</title>
     <style>
-        /* 整體背景為白色，文字為深黑色 */
-        body { font-family: "Noto Serif TC", serif; line-height: 2; color: #1a1a1a; max-width: 800px; margin: 0 auto; padding: 100px 20px; background-color: #ffffff; }
+        body { 
+            font-family: "Noto Serif TC", serif; 
+            line-height: 2; 
+            color: #1a1a1a; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 100px 20px; 
+            background-color: #ffffff; 
+        }
         
-        /* 標題使用黑色，底部裝飾線使用 ACC 紅 */
-        h1 { font-size: 2.5rem; color: #000000; border-bottom: 3px solid #C41E3A; padding-bottom: 20px; }
+        h1 { 
+            font-size: 2.5rem; 
+            color: #000000; 
+            border-bottom: 3px solid #C41E3A; 
+            padding-bottom: 20px; 
+        }
         
-        .article-content { margin-top: 40px; font-size: 1.2rem; }
+        .article-content { 
+            margin-top: 40px; 
+            font-size: 1.2rem; 
+        }
         
-        /* 返回連結預設為黑色，滑過時變為紅色 */
         .back-home { 
             display: inline-block; 
             margin-bottom: 30px; 
@@ -21,17 +34,112 @@
             font-weight: bold; 
             transition: 0.3s;
         }
-        .back-home:hover { color: #C41E3A; }
+        .back-home:hover { 
+            color: #C41E3A; 
+        }
 
-        /* 如果文章內有重點文字，可以使用這個 class */
-        .highlight { color: #C41E3A; font-weight: bold; }
+        .image-text-block {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .image-text-block.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .image-text-block img {
+            width: 45%;
+            height: auto;
+        }
+
+        .text-box {
+            width: 55%;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-block,
+            .image-text-block.reverse {
+                flex-direction: column;
+            }
+
+            .image-text-block img,
+            .text-box {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-home">← 回到 30 周年首頁</a>
-    <h1>ACC 30，我們和 ACC 夥伴的探索台灣之旅</h1>
-    <div class="article-content">
-        <p>文章</p>
+
+<a href="index.html#entries" class="back-home">← 回到ACC 30系列報導</a>
+<h1>ACC 30，我們和 ACC 夥伴的探索台灣之旅</h1>
+
+<div class="article-content">
+    <p>以下為文章內容</p>
+
+    <!-- 1 左 -->
+    <div class="image-text-block">
+        <img src="tainan.jpg" alt="台南參訪">
+        <div class="text-box"><p>以下為文字</p></div>
     </div>
+
+    <!-- 2 右 -->
+    <div class="image-text-block reverse">
+        <img src="tainan1.jpg" alt="台南參訪">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 3 左 -->
+    <div class="image-text-block">
+        <img src="tainan2.jpg" alt="台南參訪">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 4 右 -->
+    <div class="image-text-block reverse">
+        <img src="tea.jpg" alt="茶席交流">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 5 左 -->
+    <div class="image-text-block">
+        <img src="tea0.jpg" alt="茶席交流">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 6 右 -->
+    <div class="image-text-block reverse">
+        <img src="tea1.jpg" alt="茶席交流">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 7 左 -->
+    <div class="image-text-block">
+        <img src="Charles C.Y. Chen Lunch.jpg" alt="交流午宴">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 8 右 -->
+    <div class="image-text-block reverse">
+        <img src="TPAC.jpg" alt="場館參訪">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 9 左 -->
+    <div class="image-text-block">
+        <img src="TPAC1.jpg" alt="場館參訪">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+    <!-- 10 右（最後） -->
+    <div class="image-text-block reverse">
+        <img src="nyboard.jpg" alt="交流合影">
+        <div class="text-box"><p>以下為文字</p></div>
+    </div>
+
+</div>
+
 </body>
 </html>
