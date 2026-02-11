@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -80,13 +80,12 @@
             z-index: 1;
         }
 
-        /* ===== 四格卡片區（✔ 改成背景圖片） ===== */
+        /* ===== 四格卡片區 ===== */
         .entry-grid {
             background: url("./background.jpg") center / cover no-repeat;
             color: #fff;
         }
 
-        /* 背景遮罩，讓文字更清楚 */
         .entry-grid::before {
             content: "";
             position: absolute;
@@ -191,12 +190,12 @@
 
             <div class="entry-card" style="background-image: url('./jade.jpg');">
                 <div class="entry-content">
-                    <h2>關於雙人玉玦</h2>
+                    <h2>ACC 台灣30雙人玉玦</h2>
                     <a href="jade.html" class="btn">閱讀更多</a>
                 </div>
             </div>
 
-            <div class="entry-card" style="background-image: url('./gala.jpg');">
+            <div class="entry-card" style="background-image: url('./front.jpg');">
                 <div class="entry-content">
                     <h2>ACC 30 周年晚宴</h2>
                     <a href="gala.html" class="btn">閱讀更多</a>
@@ -210,9 +209,10 @@
                 </div>
             </div>
 
+            <!-- 這張改為 front.jpg + 標題修改 -->
             <div class="entry-card" style="background-image: url('./visit.jpg');">
                 <div class="entry-content">
-                    <h2>同行此刻：探索台灣之旅</h2>
+                    <h2>以藝會友，與你同行</h2>
                     <a href="visit.html" class="btn">閱讀更多</a>
                 </div>
             </div>
@@ -222,3 +222,4 @@
 
 </body>
 </html>
+<!-- force pages rebuild 2026-02-10 -->
