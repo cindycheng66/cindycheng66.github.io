@@ -25,7 +25,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* 新增日期樣式 */
 .date {
     margin-top: 10px;
     font-size: 1rem;
@@ -55,7 +54,6 @@ h1 {
     margin-top: 100px;
 }
 
-/* 圖片 */
 .image-block {
     margin: 40px 0 10px 0;
 }
@@ -66,7 +64,6 @@ h1 {
     display: block;
 }
 
-/* 三個作品縮距離 */
 .work-title {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -78,7 +75,6 @@ p {
     margin-bottom: 25px;
 }
 
-/* 圖說 */
 .caption {
     font-size: 0.95rem;
     color: #cccccc;
@@ -86,7 +82,6 @@ p {
     text-align: center;
 }
 
-/* founder 圖片 + banner */
 .banner-wrapper {
     position: relative;
     margin: 40px 0;
@@ -110,7 +105,52 @@ p {
     line-height: 1.8;
 }
 
-/* 影片樣式 */
+/* grantee 左側中間 banner */
+.grantee-wrapper {
+    position: relative;
+    margin: 40px 0 10px 0;
+}
+
+.grantee-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grantee-banner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.65);
+    padding: 25px 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 60%;
+}
+
+/* ✅ 新增：TPAC 左下角 banner */
+.tpac-wrapper {
+    position: relative;
+    margin: 40px 0 10px 0;
+}
+
+.tpac-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tpac-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.65);
+    padding: 25px 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 .video-wrapper {
     margin: 40px 0;
 }
@@ -120,7 +160,6 @@ p {
     height: 450px;
     border: none;
 }
-
 </style>
 </head>
 
@@ -160,7 +199,6 @@ ACC台灣成立三十年，ACC的台灣獎助計畫更已屆六十二年，<br>
     </div>
 </div>
 
-<!-- 插入 YouTube 影片 -->
 <div class="video-wrapper">
     <iframe 
         src="https://www.youtube.com/embed/v008b0dD-XY" 
@@ -199,16 +237,25 @@ ACC台灣成立三十年，ACC的台灣獎助計畫更已屆六十二年，<br>
 最後由受獎人凌偉隆將30 年前的受獎人何曉玫的人生奮鬥故事製作成影片，為這已執行多年的獎助計畫如何在這30 年中形塑台灣的藝術風貌做最佳的註解。
 </p>
 
-<div class="image-block">
+<div class="grantee-wrapper">
     <img src="granteephoto.jpg" alt="grantee">
+    <div class="grantee-banner">
+        參與璞玉煉金的受獎人<br>
+        Grantees participating in Alchemy of Brilliancy
+    </div>
 </div>
 
-<div class="image-block">
+<!-- ✅ TPAC 加左下角 banner -->
+<div class="tpac-wrapper">
     <img src="TPAC.jpg" alt="tpac">
+    <div class="tpac-banner">
+        臺北表演藝術中心<br>
+        Taipei Performing Arts Center (TPAC)
+    </div>
 </div>
 
 <div class="image-block">
-    <img src="11.jpg" alt="璞玉煉金">
+    <img src="AlchemyofBrilliancy.jpg" alt="璞玉煉金">
     <div class="caption">
         非常榮幸邀請到周渝老師為ACC 台灣 30 周年題寫「璞玉煉金」四字。
     </div>
@@ -222,6 +269,5 @@ ACC 願意成為打亮舞台的一片光<br>
 </div>
 
 </div>
-
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -80,7 +80,7 @@
             z-index: 1;
         }
 
-        /* ===== 四格卡片區 ===== */
+        /* ===== 三格卡片區 ===== */
         .entry-grid {
             background: url("./background.jpg") center / cover no-repeat;
             color: #fff;
@@ -102,7 +102,7 @@
         .grid-wrapper {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr); /* 改為三格 */
             gap: 30px;
         }
 
@@ -184,17 +184,11 @@
         </div>
     </section>
 
-    <!-- ===== 四個入口卡片 ===== -->
+    <!-- ===== 三個入口卡片 ===== -->
     <section id="entries" class="entry-grid">
         <div class="grid-wrapper">
 
-            <div class="entry-card" style="background-image: url('./jade.jpg');">
-                <div class="entry-content">
-                    <h2>ACC 台灣30雙人玉玦</h2>
-                    <a href="jade.html" class="btn">閱讀更多</a>
-                </div>
-            </div>
-
+            <!-- 保留：周年晚宴（已併玉玦） -->
             <div class="entry-card" style="background-image: url('./front.jpg');">
                 <div class="entry-content">
                     <h2>ACC 30 周年晚宴</h2>
@@ -202,6 +196,7 @@
                 </div>
             </div>
 
+            <!-- 保留：璞玉煉金 -->
             <div class="entry-card" style="background-image: url('./performance.jpg');">
                 <div class="entry-content">
                     <h2>《璞玉煉金的故事－ACC台灣30》</h2>
@@ -209,7 +204,7 @@
                 </div>
             </div>
 
-            <!-- 這張改為 front.jpg + 標題修改 -->
+            <!-- 保留：以藝會友 -->
             <div class="entry-card" style="background-image: url('./visit.jpg');">
                 <div class="entry-content">
                     <h2>以藝會友，與你同行</h2>
